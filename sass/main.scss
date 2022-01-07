@@ -1,0 +1,20 @@
+/*   UTILS  */
+@import './utils/vars';
+@import './utils/mixins';
+
+/*  BASE  */
+@import './base/common';
+@import './base/reset';
+
+/*  COMPONENTS  */
+@import './components/container';
+@import './components/section';
+
+/*  LAYOUT */
+@import './layout/header';
+
+@import './layout/staff';
+@import './layout/about';
+@import './layout/history';
+
+@import './layout/footer';

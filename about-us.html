@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon_department</title>
+
+    <!-- Шрифты    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!--   Нормализатор стилей   -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__title">
+                <div class="header__institution">Institute of Astronomy of Kharkiv National University </div>
+                <h1 class="header__main_title"> Lunar-Planetary Group </h1>
+            </div>
+
+            <ul class="header__planets">
+                <li class="header__planets_item">
+                    <picture class="header__pic">
+                        <source srcset="./images/mercury_w50.png 1x, ./images/mercury_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/mercury_w50.png 1x, ./images/mercury_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/mercury_w50.png 1x, ./images/mercury_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/mercury_w50.png" alt="Mercury" />
+                    </picture>
+                    <div class="header__planets_text">
+                        Mercury
+                    </div>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic_venus">
+                        <source srcset="./images/venus_w50.png 1x, ./images/venus_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/venus_w50.png 1x, ./images/venus_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/venus_w50.png 1x, ./images/venus_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/venus_w50.png" alt="Venus" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic_mars">
+                        <source srcset="./images/mars_w50.png 1x, ./images/mars_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/mars_w50.png 1x, ./images/mars_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/mars_w50.png 1x, ./images/mars_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/mars_w50.png" alt="Mars" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic_jupiter">
+                        <source srcset="./images/jupiter_w50.png 1x, ./images/jupiter_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/jupiter_w50.png 1x, ./images/jupiter_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/jupiter_w50.png 1x, ./images/jupiter_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/jupiter_w50.png" alt="Jupiter" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic_saturn">
+                        <source srcset="./images/saturn_w100.png 1x, ./images/saturn_w200.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/saturn_w100.png 1x, ./images/saturn_w200.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/saturn_w100.png 1x, ./images/saturn_w200.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/saturn_w100.png" alt="Saturn" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic">
+                        <source srcset="./images/uranus_w80.png 1x, ./images/uranus_w160.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/uranus_w80.png 1x, ./images/uranus_w160.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/uranus_w80.png 1x, ./images/uranus_w160.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/uranus_w80.png" alt="Uranus" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic">
+                        <source srcset="./images/neptune_w50.png 1x, ./images/neptune_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/neptune_w50.png 1x, ./images/neptune_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/neptune_w50.png 1x, ./images/neptune_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/neptune_w50.png" alt="Neptune" />
+                    </picture>
+                </li>
+            </ul>
+
+            <!--  Мобильное меню -->
+            <button type="button" class="header__menu-button js-open-menu" aria-expanded="false"
+                aria-controls="menu-container">
+                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="header__icon-menu" href="./images/icons.svg#hamburger"></use>
+                </svg>
+            </button>
+
+
+            <!-- Навигация -->
+            <nav class="header__nav">
+                <ul class="header__content">
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button"> <a href="./index.html"
+                                class="header__content_link">Home</a> </button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button"> <a href="./research-area.html"
+                                class="header__content_link">Research area</a> </button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button"> <a href="./publications.html"
+                                class="header__content_link">Publications </a></button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button "> <a href="./staff.html"
+                                class="header__content_link">Staff</a> </button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button"> <a href="./history.html"
+                                class="header__content_link">History </a></button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button current"> <a href="./about-us.html"
+                                class="header__content_link">About us </a></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="about__main">
+        <!--  Мобиьное меню -->
+        <div class="menu-container js-menu-container" id="menu-container">
+
+            <button type="button" class="mobile-menu-cross js-close-menu">
+                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="./images/icons.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu__content">
+                <ul class="mobile-menu__pages">
+                    <li class="mobile-menu__item">
+                        <a href="./index.html" class="mobile-menu__link ">Home</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./research-area.html" class="mobile-menu__link">Research area</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./publications.html" class="mobile-menu__link">Publications</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./staff.html" class="mobile-menu__link">Staff</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./history.html" class="mobile-menu__link">History</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./about-us.html" class="mobile-menu__link mobile-menu__link-current">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+<section class="section">
+    <div class="container">
+        <h2 class="team__title">Our team</h2>
+     <div class="team__parts">   
+        <div class="team__left">
+<picture">
+    <source srcset="./images/lp-group_staff-1x.jpg 1x, ./images/lp-group_staff-2x.jpg 2x" media="(max-width: 767px)" />
+    <source srcset="./images/lp-group_staff-1x.jpg 1x, ./images/lp-group_staff-2x.jpg 2x" media="(min-width: 768px)" />
+    <source srcset="./images/lp-group_staff-1x.jpg 1x, ./images/lp-group_staff-2x.jpg 2x" media="(min-width: 1200px)" />
+    <img src="./images/lp-group_staff-1x.jpg" alt="Our team" />
+</picture>
+<p class="team__pic_caption">Employees of the Lunar-Planetary Group (2020)</p>
+<p class="team__pic_text"><span class="team__pic_span">From left to right:</span> G.&nbsp;P.&nbsp;Marchenko, М.&nbsp;О.&nbsp;Stepanyuk, V.&nbsp;G.&nbsp;Kaydash, S.&nbsp;F.&nbsp;Velichko,<br>
+M.&nbsp;V.&nbsp;Opanasenko, Yu.&nbsp;G.&nbsp;Shkuratov, V.&nbsp;V.&nbsp;Korokhin, D.&nbsp;G.&nbsp;Stankevich, Y. S. Surkov, V. I. Wolf.
+</p>
+</div>
+<div class="team__contacts">
+<p class="team__address">35 Sumskaya St., Kharkov, 61022, Ukraine</p>
+<ul class="team__contact_list">
+<li class="team__contact_item">tel: <a href="tel:+380577022207" class="team__contact_link"> +38 (057) 702-2207</a></li>
+<li class="team__contact_item">email: <a href="mail:dslpp@astron.kharkov.ua" class="team__contact_link"> dslpp@astron.kharkov.ua</a></li>
+</ul>
+<iframe class="team__map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.4532583184696!2d36.22995219799357!3d50.00285918003889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e1173f5319%3A0xb872e7c0f78224fd!2z0JzQtdGC0LXQvtGB0YLQsNC90YbQuNGPLCDQvtCx0YHQtdGA0LLQsNGC0L7RgNC40Y8g0KXQndCj!5e0!3m2!1sru!2sua!4v1639996615101!5m2!1sru!2sua"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+</div>
+ </div>
+</section >
+
+<section class="section people__section">
+    <div class="container">
+        <h2 class="people__title">People with whom we cooperate and are friends for many years</h2>
+<ul class="people__list">
+    <li class="people__item">
+        <picture">
+        <source srcset="./images/carly_peters-1x.jpg 1x, ./images/carly_peters-2x.jpg 2x" media="(max-width: 767px)" />
+        <source srcset="./images/carly_peters-1x.jpg 1x, ./images/carly_peters-2x.jpg 2x" media="(min-width: 768px)" />
+        <source srcset="./images/carly_peters-1x.jpg 1x, ./images/carly_peters-2x.jpg 2x" media="(min-width: 1200px)" />
+        <img src="./images/carly_peters-1x.jpg" alt="Carly Peters" />
+        </picture>
+<p class="people__text">
+    <span class="people__name">Carly Peters </span> <br> Brown University<br> USA
+</p>
+    </li>
+    <li class="people__item">
+        <picture">
+            <source srcset="./images/gordon_videen-1x.jpg 1x, ./images/gordon_videen-2x.jpg 2x" media="(max-width: 767px)" />
+            <source srcset="./images/gordon_videen-1x.jpg 1x, ./images/gordon_videen-2x.jpg 2x" media="(min-width: 768px)" />
+            <source srcset="./images/gordon_videens-1x.jpg 1x, ./images/gordon_videen-2x.jpg 2x" media="(min-width: 1200px)" />
+            <img src="./images/gordon_videen-1x.jpg" alt="Gordon Videen" />
+        </picture>
+         <p class="people__text">
+        <span class="people__name">Gordon Videen </span> <br> Space Science Institute<br> USA
+        </p>
+    </li>
+    <li class="people__item">
+        <picture">
+            <source srcset="./images/nelson-1x.jpg 1x, ./images/nelson-2x.jpg 2x" media="(max-width: 767px)" />
+            <source srcset="./images/nelson-1x.jpg 1x, ./images/nelson-2x.jpg 2x" media="(min-width: 768px)" />
+            <source srcset="./images/nelson-1x.jpg 1x, ./images/nelson-2x.jpg 2x" media="(min-width: 1200px)" />
+            <img src="./images/nelson-1x.jpg" alt="Robert Nelson" />
+            </picture>
+            <p class="people__text">
+                <span class="people__name">Robert Nelson </span> <br>Planetary Science Institute <br> USA
+            </p>
+    </li>
+    <li class="people__item">
+        <picture">
+            <source srcset="./images/muinonen_grynko-1x.jpg 1x, ./images/muinonen_grynko-2x.jpg 2x" media="(max-width: 767px)" />
+            <source srcset="./images/muinonen_grynko-1x.jpg 1x, ./images/muinonen_grynko-2x.jpg 2x" media="(min-width: 768px)" />
+            <source srcset="./images/muinonen_grynko-1x.jpg 1x, ./images/muinonen_grynko-2x.jpg 2x" media="(min-width: 1200px)" />
+            <img src="./images/muinonen_grynko-1x.jpg" alt="Muinonen, Grynko" />
+            </picture>
+            <p class="people__text">
+              <span class="people__name"> Karri Muinonen</span><br> University of Helsinki, Finland <br> <span class="people__name">Yevgen Grynko </span><br> Paderborn University, Germany
+            </p>
+    </li>
+    <li class="people__item">
+        <picture">
+            <source srcset="./images/kim_sungsoo-1x.png 1x, ./images/kim_sungsoo-2x.png 2x" media="(max-width: 767px)" />
+            <source srcset="./images/kim_sungsoo-1x.png 1x, ./images/kim_sungsoo-2x.png 2x" media="(min-width: 768px)" />
+            <source srcset="./images/kim_sungsoo-1x.png 1x, ./images/kim_sungsoo-2x.png 2x" media="(min-width: 1200px)" />
+            <img src="./images/kim_sungsoo-1x.png" alt="Kim Sungsoo" />
+            </picture>
+            <p class="people__text">
+                <span class="people__name"> Kim Sungsoo</span><br> Kyung Hee University <br> South Korea <br> 
+            </p>
+    </li>
+        <li class="people__item">
+            <picture">
+                <source srcset="./images/viktor_tishkovets-1x.png 1x, ./images/viktor_tishkovets-2x.png 2x" media="(max-width: 767px)" />
+                <source srcset="./images/viktor_tishkovets-1x.png 1x, ./images/viktor_tishkovets-2x.png 2x" media="(min-width: 768px)" />
+                <source srcset="./images/viktor_tishkovets-1x.png 1x, ./images/viktor_tishkovets-2x.png 2x" media="(min-width: 1200px)" />
+                <img src="./images/viktor_tishkovets-1x.png" alt="Viktor Tishkovets" />
+                </picture>
+                <p class="people__text">
+                    <span class="people__name">Viktor Tishkovets</span><br> Institute of Radio Astronomy <br> Ukraine <br>
+                </p>
+        </li>
+    <li class="people__item">
+        <picture">
+            <source srcset="./images/hao_zhang-1x.jpg 1x, ./images/hao_zhang-2x.jpg 2x" media="(max-width: 767px)" />
+            <source srcset="./images/hao_zhang-1x.jpg 1x, ./images/hao_zhang-2x.jpg 2x" media="(min-width: 768px)" />
+            <source srcset="./images/hao_zhang-1x.jpg 1x, ./images/hao_zhang-2x.jpg 2x" media="(min-width: 1200px)" />
+            <img src="./images/hao_zhang-1x.jpg" alt="Hao Zhang" />
+            </picture>
+            <p class="people__text">
+                <span class="people__name">Hao Zhang</span><br> China University of Geosciences <br> China <br>
+            </p>
+    </li>
+</ul>
+ </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        
+        <picture">
+            <source srcset="./images/conference_with_logo-1x.jpg 1x, ./images/conference_with_logo-2x.jpg 2x"
+                media="(max-width: 767px)" />
+            <source srcset="./images/conference_with_logo-1x.jpg 1x, ./images/conference_with_logo-2x.jpg 2x"
+                media="(min-width: 768px)" />
+            <source srcset="./images/conference_with_logo-1x.jpg 1x, ./images/conference_with_logo-2x.jpg 2x"
+                media="(min-width: 1200px)" />
+            <img src="./images/conference_with_logo-1x.jpg" alt="People" />
+            </picture>
+            <p class="people__main-caption">
+                International conference "ATMOSPHERELESS SOLAR SYSTEM BODIES IN THE SPACE EXPLORATION ERA" - June 18-22,
+                2018
+            </p>
+            </div>
+        </section>
+            
+<section class="section collab__section">
+<div class="container">
+
+    <p class="collab__text">The Lunar-Planetary Group has extensive scientific contacts, conducts research in cooperation
+        <br> with scientists from the
+        USA, France, Finland, Germany, Japan, China, Poland, Russia, etc.</p>
+
+        <ul class="collab__list">
+            <li class="collab__item">
+                <a href="" target="_blank" class="collab__link"> <img src="./images/nasa.png" alt="NASA" class="collab__pic"> </a>
+            </li>
+            <li class="collab__item">
+                <a href="" target="_blank" class="collab__link"> <img src="./images/space-science.png" alt="Space Science" class="collab__pic"> </a>
+            </li>
+            <li class="collab__item">
+                <a href="" target="_blank" class="collab__link"> <img src="./images/maryland.png" alt="Maryland University"
+                                    class="collab__pic"> </a>
+            </li>
+            <li class="collab__item">
+                 <a href="" target="_blank" class="collab__link"> <img src="./images/geoscience.png" alt="University of Geoscience"
+                                        class="collab__pic"> </a>
+            </li>
+            <li class="collab__item">
+                <a href="" target="_blank" class="collab__link"> <img src="./images/max-planck.png" alt="Max Planck Institute"
+                        class="collab__pic"> </a>
+            </li>
+            <li class="collab__item">
+                <a href="" target="_blank" class="collab__link"> <img src="./images/space-telescope.jpg" alt="Space Telescope Science Institute"
+                        class="collab__pic"> </a>
+            </li>
+            <li class="collab__item">
+                <a href="" target="_blank" class="collab__link"> <img src="./images/jpl-w200.png"
+                        alt="Jet propulsion laboratory" class="collab__pic"> </a>
+            </li>
+            <li class="collab__item">
+                <a href="" target="_blank" class="collab__link"> <img src="./images/korea_astronomy.png" alt="Korea Astronomy and Space Science Institute"
+                        class="collab__pic"> </a>
+            </li>
+            <li class="collab__item">
+                <a href="" target="_blank" class="collab__link"> <img src="./images/nas.png"
+                        alt="National Academy of Sciences of Ukraine" class="collab__pic"> </a>
+            </li>
+            <li class="collab__item">
+                <a href="" target="_blank" class="collab__link"> <img src="./images/nls.jpg"
+                        alt="Finnish Geospatial Research Institute" class="collab__pic"> </a>
+            </li>
+            <li class="collab__item">
+                <a href="" target="_blank" class="collab__link"> <img src="./images/planetary_science.png"
+                        alt="Planetary Science Institute" class="collab__pic"> </a>
+            </li>
+            <li class="collab__item">
+                <a href="" target="_blank" class="collab__link"> <img src="./images/ras.jpg"
+                        alt="Russian Academy of Science" class="collab__pic"> </a>
+            </li>
+            <li class="collab__item">
+                <a href="" target="_blank" class="collab__link"> <img src="./images/paderborn.jpg" alt="Universitat Paderborn"
+                        class="collab__pic"> </a>
+            </li>
+            <li class="collab__item">
+                <a href="" target="_blank" class="collab__link"> <img src="./images/arl.png" alt="Army Research Lab"
+                        class="collab__pic"> </a>
+            </li>
+            <li class="collab__item">
+                <a href="" target="_blank" class="collab__link"> <img src="./images/inaf.jpg" alt="Instituto Nazionale di Astrofisica"
+                        class="collab__pic"> </a>
+            </li>
+        </ul>
+</div> <!-- End of container -->
+</section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main-list">
+                <div class="footer__contacts">
+                    <p class="footer__contacts_title"> Contacts </p>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            35 Sumska Str.,
+                            Kharkiv,
+                            61022,
+                            Ukraine
+                        </li>
+                        <li>
+                            <a href="mailto:sky@astron.kharkov.ua" class="footer__link"> sky@astron.kharkov.ua </a>
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>
+    
+            <p class="footer__copyright"><a href="mailto:velichko.anna.b@gmail.com" class="footer__copyright_link"> &copy Anna Velichko, 2021</a></p>
+        </div>
+    </footer>
+
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+        <script defer src="./js/mobile-menu.js"></script>
+        </body>
+        
+        </html>

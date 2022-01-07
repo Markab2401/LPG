@@ -1,0 +1,175 @@
+.team__title {
+  margin-bottom: 30px;
+}
+
+.team__pic_caption {
+  margin: 10px 0;
+  @include font(16px, 700, 16px, 0.03em);
+}
+
+.team__pic_text {
+  display: inline-block;
+}
+
+.team__pic_span {
+  @include font(14px, 700, 16px, 0.03em);
+}
+
+.team__parts {
+  display: inline-flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.team__contacts {
+  margin-top: 50px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-top: 0;
+  }
+  padding: 20px;
+}
+
+.team__address {
+  @include font(14px, 700, 24px, 0.03em);
+}
+
+.team__contact_link {
+  @include font(14px, 500, 16px, 0.03em);
+  color: var(--text-color-dark);
+}
+
+.team__map {
+  display: inline-block;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 400px;
+  }
+  height: 300px;
+  margin-top: 20px;
+}
+
+.collab__section {
+  background-color: rgba(162, 162, 255, 0.2);
+}
+
+.collab__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: calc(-1 * var(--card-gap));
+  margin-left: calc(-1 * var(--card-gap));
+}
+
+.collab__item {
+  height: 100px;
+  flex-basis: calc(100% / 2 - 1 * var(--card-gap));
+  margin-left: var(--card-gap);
+  margin-top: var(--card-gap);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 4 - 1 * var(--card-gap));
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - 1 * var(--card-gap));
+  }
+
+  border-radius: 5px;
+  border: 1px solid var(--footer-bkg-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: rebeccapurple;
+  }
+}
+
+.collab__text {
+  margin-bottom: 30px;
+}
+
+.collab__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collab__pic {
+  max-height: 90%;
+  max-width: 90%;
+}
+
+.people__main-caption {
+  margin-top: 20px;
+  @include font(16px, 700, 24px, 0.03em);
+}
+
+.people__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-gap));
+  @media screen and (min-width: 768px) {
+    margin-left: calc(-1 * var(--card-gap));
+  }
+}
+
+.people__item {
+  flex-basis: 100%;
+
+  margin-top: var(--card-gap);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 1 * var(--card-gap));
+    margin-left: var(--card-gap);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 1 * var(--card-gap));
+    margin-left: var(--card-gap);
+  }
+}
+
+.people__text {
+  @include font(14px, 400, 24px, 0.03em);
+}
+
+.people__name {
+  font-style: italic;
+  @include font(16px, 700, 24px, 0.03em);
+}
+
+.about__main {
+  position: relative;
+}
+
+.about__main::after {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  content: '';
+  background-image: url('../images/mars_bkg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 50%;
+  z-index: -5;
+}
+
+.people__title {
+  margin-bottom: 30px;
+}
+
+.people__section {
+  background-color: rgba(162, 162, 255, 0.2);
+}

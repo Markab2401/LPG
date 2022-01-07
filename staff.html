@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon_department</title>
+
+    <!-- Шрифты    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!--   Нормализатор стилей   -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__title">
+                <div class="header__institution">Institute of Astronomy of Kharkiv National University </div>
+                <h1 class="header__main_title"> Lunar-Planetary Group </h1>
+            </div>
+
+            <ul class="header__planets">
+                <li class="header__planets_item">
+                    <picture class="header__pic">
+                        <source srcset="./images/mercury_w50.png 1x, ./images/mercury_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/mercury_w50.png 1x, ./images/mercury_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/mercury_w50.png 1x, ./images/mercury_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/mercury_w50.png" alt="Mercury" />
+                    </picture>
+                    <div class="header__planets_text">
+                        Mercury
+                    </div>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic_venus">
+                        <source srcset="./images/venus_w50.png 1x, ./images/venus_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/venus_w50.png 1x, ./images/venus_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/venus_w50.png 1x, ./images/venus_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/venus_w50.png" alt="Venus" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic_mars">
+                        <source srcset="./images/mars_w50.png 1x, ./images/mars_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/mars_w50.png 1x, ./images/mars_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/mars_w50.png 1x, ./images/mars_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/mars_w50.png" alt="Mars" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic_jupiter">
+                        <source srcset="./images/jupiter_w50.png 1x, ./images/jupiter_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/jupiter_w50.png 1x, ./images/jupiter_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/jupiter_w50.png 1x, ./images/jupiter_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/jupiter_w50.png" alt="Jupiter" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic_saturn">
+                        <source srcset="./images/saturn_w100.png 1x, ./images/saturn_w200.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/saturn_w100.png 1x, ./images/saturn_w200.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/saturn_w100.png 1x, ./images/saturn_w200.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/saturn_w100.png" alt="Saturn" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic">
+                        <source srcset="./images/uranus_w80.png 1x, ./images/uranus_w160.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/uranus_w80.png 1x, ./images/uranus_w160.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/uranus_w80.png 1x, ./images/uranus_w160.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/uranus_w80.png" alt="Uranus" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic">
+                        <source srcset="./images/neptune_w50.png 1x, ./images/neptune_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/neptune_w50.png 1x, ./images/neptune_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/neptune_w50.png 1x, ./images/neptune_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/neptune_w50.png" alt="Neptune" />
+                    </picture>
+                </li>
+            </ul>
+
+            <!--  Мобильное меню -->
+<button type="button" class="header__menu-button js-open-menu" aria-expanded="false" aria-controls="menu-container">
+    <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+        <use class="header__icon-menu" href="./images/icons.svg#hamburger"></use>
+    </svg>
+</button>
+
+
+            <!-- Навигация -->
+            <nav class="header__nav">
+                <ul class="header__content">
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button"> <a href="./index.html"
+                                class="header__content_link">Home</a> </button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button"> <a href="./research-area.html"
+                                class="header__content_link">Research area</a> </button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button"> <a href="./publications.html"
+                                class="header__content_link">Publications </a></button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button current"> <a href="./staff.html"
+                                class="header__content_link">Staff</a> </button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button"> <a href="./history.html" class="header__content_link">History
+                            </a></button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button"> <a href="./about-us.html"
+                                class="header__content_link">About us </a></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main class="main__staff">
+   <!--  Мобильное меню --> 
+<div class="menu-container js-menu-container" id="menu-container">
+
+    <button type="button" class="mobile-menu-cross js-close-menu">
+        <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/icons.svg#cross"></use>
+        </svg>
+    </button>
+<div class="mobile-menu__content">
+    <ul class="mobile-menu__pages">
+        <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link ">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="./research-area.html" class="mobile-menu__link">Research area</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="./publications.html" class="mobile-menu__link">Publications</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="./staff.html" class="mobile-menu__link mobile-menu__link-current" >Staff</a>
+        </li>
+        <li class="mobile-menu__item">
+            <a href="./history.html" class="mobile-menu__link">History</a>
+        </li>
+        <li class="mobile-menu__item">
+           <a href="./about-us.html" class="mobile-menu__link">About us</a>
+        </li>
+    </ul>
+</div>
+</div>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section__title"> Staff </h2>
+            <ul class="staff__list">
+<!-- Employee  1 -->
+                <li class="staff__item">
+                    <picture>
+                        <source srcset="./images/kaydash.jpg 1x, ./images/kaydash.jpg 2x" media="(max-width: 767px)" />
+                        <source srcset="./images/kaydash.jpg 1x, ./images/kaydash.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/kaydash.jpg 1x, ./images/kaydash.jpg 2x" media="(min-width: 1200px)" />
+                        <img src="./images/kaydash.jpg" alt="Kaydash" />
+                    </picture> 
+                    <h3 class="staff__name">Vadym G. Kaydash</h3>
+                    <p class="staff__position">Leading Researcher</p> 
+                                    
+                    <ul class="staff__socials_list">
+                        <li class="staff__socials_item">
+                            <a href="mailto:vgkaydash@gmail.com" class="staff__socials_link">
+                                <svg class="staff__socials_icon" width="20" height="20">
+                                <use href="./images/icons.svg#gmail"></use>
+                                </svg>
+                            </a>
+                        </li>
+                          <li class="staff__socials_item">
+                            <a href="https://scholar.google.com.ua/citations?user=M395yBAAAAAJ&hl=uk" target="_blank" class="staff__socials_link">
+                                <svg class="staff__socials_icon" width="30" height="30">
+                                <use href="./images/icons.svg#google-scholar"></use>
+                                </svg>
+                            </a>    
+                        </li>
+                            <li class="staff__socials_item">
+                            <a href="https://www.scopus.com/authid/detail.uri?authorId=6508209235" target="_blank" class="staff__socials_link">
+                                <svg class="staff__socials_icon" width="20" height="20" >
+                                <use href="./images/icons.svg#scopus"></use>
+                                </svg>
+                            </a>              
+                        </li>
+                            <li class="staff__socials_item">
+                            <a href="https://www.researchgate.net/profile/Vadym_Kaydash" target="_blank" class="staff__socials_link">
+                                <svg class="staff__socials_icon" width="20" height="20">
+                                 <use href="./images/icons.svg#researchgate"></use>
+                                </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        </li>
+<!-- Employee  2 -->
+<li class="staff__item">
+    <picture>
+        <source srcset="./images/shkuratov.jpg 1x, ./images/shkuratov.jpg 2x" media="(max-width: 767px)" />
+        <source srcset="./images/shkuratov.jpg 1x, ./images/shkuratov.jpg 2x" media="(min-width: 768px)" />
+        <source srcset="./images/shkuratov.jpg 1x, ./images/shkuratov.jpg 2x" media="(min-width: 1200px)" />
+        <img src="./images/shkuratov.jpg" alt="Технокряк" />
+    </picture>
+    <h3 class="staff__name">Yuriy D. Shkuratov</h3>
+    <p class="staff__position">Leading Researcher</p>
+   
+
+    <ul class="staff__socials_list">
+        <li class="staff__socials_item">
+            <a href="mailto:shkuratov@astron.kharkov.ua" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#gmail"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://scholar.google.com.ua/citations?user=QoRWllMAAAAJ&hl=uk" target="_blank"
+                class="staff__socials_link">
+                <svg class="staff__socials_icon" width="30" height="30">
+                    <use href="./images/icons.svg#google-scholar"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=7003941622" target="_blank" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#scopus"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://www.researchgate.net/profile/Yu_Shkuratov" target="_blank" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#researchgate"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</li>
+<!-- Employee  3 -->
+<li class="staff__item">
+    <picture>
+        <source srcset="./images/korokhin.jpg 1x, ./images/korokhin.jpg 2x" media="(max-width: 767px)" />
+        <source srcset="./images/korokhin.jpg 1x, ./images/korokhin.jpg 2x" media="(min-width: 768px)" />
+        <source srcset="./images/korokhin.jpg 1x, ./images/korokhin.jpg 2x" media="(min-width: 1200px)" />
+        <img src="./images/korokhin.jpg" alt="Технокряк" />
+    </picture>
+    <h3 class="staff__name">Viktor V. Korokhin</h3>
+    <p class="staff__position">Leading Researcher</p>
+    
+
+    <ul class="staff__socials_list">
+        <li class="staff__socials_item">
+            <a href="mailto:wk@astron.kharkov.ua" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#gmail"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://scholar.google.com.ua/citations?user=mpdRDesAAAAJ&hl=uk" target="_blank"
+                class="staff__socials_link">
+                <svg class="staff__socials_icon" width="30" height="30">
+                    <use href="./images/icons.svg#google-scholar"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=6508015051" target="_blank" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#scopus"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://www.researchgate.net/profile/Viktor_Korokhin" target="_blank" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#researchgate"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</li>
+
+<!-- Employee  4 -->
+<li class="staff__item">
+     <picture >
+        <source srcset="./images/stankiewich.jpg 1x, ./images/stankiewich.jpg 2x" media="(max-width: 767px)" />
+        <source srcset="./images/stankiewich.jpg 1x, ./images/stankiewich.jpg 2x" media="(min-width: 768px)" />
+        <source srcset="./images/stankiewich.jpg 1x, ./images/stankiewich.jpg 2x" media="(min-width: 1200px)" />
+        <img src="./images/stankiewich.jpg" alt="Dmitriy Stankiewich" />
+    </picture>
+    
+    <h3 class="staff__name">Dmitriy G. Stankiewich</h3>
+    <p class="staff__position">Senior Researcher</p>
+
+
+    <ul class="staff__socials_list">
+        <li class="staff__socials_item">
+            <a href="mailto:dgs2109@gmail.com" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#gmail"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://scholar.google.com.ua/citations?user=mpdRDesAAAAJ&hl=uk" target="_blank"
+                class="staff__socials_link">
+                <svg class="staff__socials_icon" width="30" height="30">
+                    <use href="./images/icons.svg#google-scholar"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=6604014398" target="_blank" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#scopus"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://www.researchgate.net/profile/Viktor_Korokhin" target="_blank" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#researchgate"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</li>
+
+<!-- Employee  5 -->
+<li class="staff__item">
+    <picture>
+        <source srcset="./images/opanasenko.jpg 1x, ./images/opanasenko.jpg 2x" media="(max-width: 767px)" />
+        <source srcset="./images/opanasenko.jpg 1x, ./images/opanasenko.jpg 2x" media="(min-width: 768px)" />
+        <source srcset="./images/opanasenko.jpg 1x, ./images/opanasenko.jpg 2x" media="(min-width: 1200px)" />
+        <img src="./images/opanasenko.jpg" alt="Nikolay V. Opanasenko" />
+    </picture>
+    <h3 class="staff__name">Nikolay V. Opanasenko</h3>
+    <p class="staff__position">Senior Researcher</p>
+
+    <ul class="staff__socials_list">
+        <li class="staff__socials_item">
+            <a href="mailto:opanasenko@astron.kharkov.ua" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#gmail"></use>
+                </svg>
+            </a>
+        </li>
+                       <li class="staff__socials_item">
+                         <a href="https://www.researchgate.net/profile/Nikolay_Opanasenko" target="_blank" class="staff__socials_link">
+                         <svg class="staff__socials_icon" width="20" height="20">
+                            <use href="./images/icons.svg#researchgate"></use>
+                         </svg>
+                        </a>
+                         </li>
+    <li class="staff__socials_item">
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=9038793500" target="_blank" class="staff__socials_link">
+            <svg class="staff__socials_icon" width="20" height="20">
+                <use href="./images/icons.svg#scopus"></use>
+            </svg>
+        </a>
+    </li>
+    </ul>
+</li>
+
+<!-- Employee  6 -->
+<li class="staff__item">
+    <picture>
+        <source srcset="./images/velichko.gif 1x, ./images/velichko.gif 2x" media="(max-width: 767px)" />
+        <source srcset="./images/velichko.gif 1x, ./images/velichko.gif 2x" media="(min-width: 768px)" />
+        <source srcset="./images/velichko.gif 1x, ./images/velichko.gif 2x" media="(min-width: 1200px)" />
+        <img src="./images/velichko.gif" alt="Sergey S. Velichko" />
+    </picture>
+
+    <h3 class="staff__name">Sergey F. Velichko</h3>
+    <p class="staff__position">Senior Researcher</p>
+
+
+    <ul class="staff__socials_list">
+        <li class="staff__socials_item">
+            <a href="mailto:sergvelichko.sv@gmail.com" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#gmail"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://scholar.google.com/citations?user=Xw3dzM4AAAAJ&hl=ru" target="_blank"
+                class="staff__socials_link">
+                <svg class="staff__socials_icon" width="30" height="30">
+                    <use href="./images/icons.svg#google-scholar"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=14831813300"
+                target="_blank" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#scopus"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://www.researchgate.net/profile/Sergey_Velichko3" target="_blank" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#researchgate"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</li>
+
+<!-- Employee  7 -->
+<li class="staff__item">
+    <picture>
+        <source srcset="./images/marchenko.jpg 1x, ./images/marchenko.jpg 2x" media="(max-width: 767px)" />
+        <source srcset="./images/marchenko.jpg 1x, ./images/marchenko.jpg 2x" media="(min-width: 768px)" />
+        <source srcset="./images/marchenko.jpg 1x, ./images/marchenko.jpg 2x" media="(min-width: 1200px)" />
+        <img src="./images/marchenko.jpg" alt="Gennady P. Marchenko" />
+    </picture>
+
+    <h3 class="staff__name">Gennady P. Marchenko</h3>
+    <p class="staff__position">Researcher</p>
+
+
+    <ul class="staff__socials_list">
+        <li class="staff__socials_item">
+            <a href="mailto:mag@astron.kharkov.ua" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#gmail"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://scholar.google.com.ua/citations?user=mpdRDesAAAAJ&hl=uk" target="_blank"
+                class="staff__socials_link">
+                <svg class="staff__socials_icon" width="30" height="30">
+                    <use href="./images/icons.svg#google-scholar"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=14831813300" target="_blank" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#scopus"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://www.researchgate.net/profile/Viktor_Korokhin" target="_blank" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#researchgate"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</li>
+
+
+
+<!-- Employee  8 -->
+<li class="staff__item">
+    <picture>
+        <source srcset="./images/surkov.jpg 1x, ./images/surkov.jpg2x" media="(max-width: 767px)" />
+        <source srcset="./images/surkov.jpg 1x, ./images/surkov.jpg 2x" media="(min-width: 768px)" />
+        <source srcset="./images/surkov.jpg 1x, ./images/surkov.jpg 2x" media="(min-width: 1200px)" />
+        <img src="./images/surkov.jpg" alt="Yehor S. Surkov" />
+    </picture>
+
+    <h3 class="staff__name">Yehor S. Surkov</h3>
+    <p class="staff__position">Junior Researcher</p>
+
+
+    <ul class="staff__socials_list">
+        <li class="staff__socials_item">
+            <a href="mailto:yehor.surkov@gmail.com" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#gmail"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://scholar.google.com/citations?user=TNWAXCoAAAAJ&hl=uk" target="_blank"
+                class="staff__socials_link">
+                <svg class="staff__socials_icon" width="30" height="30">
+                    <use href="./images/icons.svg#google-scholar"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=57204581735" target="_blank" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#scopus"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="staff__socials_item">
+            <a href="https://www.linkedin.com/mwlite/in/yehor-surkov-161a4a131" target="_blank" class="staff__socials_link">
+                <svg class="staff__socials_icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</li>
+                    </ul> <!-- END of the Employees list -->
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__main-list">
+        <div class="footer__contacts">
+            <p class="footer__contacts_title"> Contacts </p>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    35 Sumska Str.,
+                    Kharkiv,
+                    61022,
+                    Ukraine
+                </li>
+                <li>
+                    <a href="mailto:sky@astron.kharkov.ua" class="footer__link"> sky@astron.kharkov.ua  </a>
+                </li>
+
+            </ul>
+        </div>
+        </div>
+
+        <p class="footer__copyright"> &copy Anna Velichko, 2021</p>
+    </div>
+</footer>
+
+<!--js-->
+<!--<script src="./js/modal.js"></script>-->
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="./js/mobile-menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon_department</title>
+
+    <!-- Шрифты    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!--   Нормализатор стилей   -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__title">
+                <div class="header__institution">Institute of Astronomy of Kharkiv National University </div>
+                <h1 class="header__main_title"> Lunar-Planetary Group </h1>
+            </div>
+
+            <ul class="header__planets">
+                <li class="header__planets_item">
+                    <picture class="header__pic">
+                        <source srcset="./images/mercury_w50.png 1x, ./images/mercury_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/mercury_w50.png 1x, ./images/mercury_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/mercury_w50.png 1x, ./images/mercury_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/mercury_w50.png" alt="Mercury" />
+                    </picture>
+                    <div class="header__planets_text">
+                        Mercury
+                    </div>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic_venus">
+                        <source srcset="./images/venus_w50.png 1x, ./images/venus_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/venus_w50.png 1x, ./images/venus_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/venus_w50.png 1x, ./images/venus_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/venus_w50.png" alt="Venus" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic_mars">
+                        <source srcset="./images/mars_w50.png 1x, ./images/mars_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/mars_w50.png 1x, ./images/mars_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/mars_w50.png 1x, ./images/mars_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/mars_w50.png" alt="Mars" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic_jupiter">
+                        <source srcset="./images/jupiter_w50.png 1x, ./images/jupiter_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/jupiter_w50.png 1x, ./images/jupiter_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/jupiter_w50.png 1x, ./images/jupiter_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/jupiter_w50.png" alt="Jupiter" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic_saturn">
+                        <source srcset="./images/saturn_w100.png 1x, ./images/saturn_w200.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/saturn_w100.png 1x, ./images/saturn_w200.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/saturn_w100.png 1x, ./images/saturn_w200.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/saturn_w100.png" alt="Saturn" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic">
+                        <source srcset="./images/uranus_w80.png 1x, ./images/uranus_w160.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/uranus_w80.png 1x, ./images/uranus_w160.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/uranus_w80.png 1x, ./images/uranus_w160.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/uranus_w80.png" alt="Uranus" />
+                    </picture>
+                </li>
+                <li class="header__planets_item">
+                    <picture class="header__pic">
+                        <source srcset="./images/neptune_w50.png 1x, ./images/neptune_w100.png 2x"
+                            media="(max-width: 767px)" />
+                        <source srcset="./images/neptune_w50.png 1x, ./images/neptune_w100.png 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/neptune_w50.png 1x, ./images/neptune_w100.png 2x"
+                            media="(min-width: 1200px)" />
+                        <img src="./images/neptune_w50.png" alt="Neptune" />
+                    </picture>
+                </li>
+            </ul>
+
+            <!--  Мобильное меню -->
+            <button type="button" class="header__menu-button js-open-menu" aria-expanded="false"
+                aria-controls="menu-container">
+                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="header__icon-menu" href="./images/icons.svg#hamburger"></use>
+                </svg>
+            </button>
+
+
+            <!-- Навигация -->
+            <nav class="header__nav">
+                <ul class="header__content">
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button"> <a href="./index.html"
+                                class="header__content_link">Home</a> </button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button"> <a href="./research-area.html"
+                                class="header__content_link">Research area</a> </button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button"> <a href="./publications.html"
+                                class="header__content_link">Publications </a></button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button "> <a href="./staff.html"
+                                class="header__content_link">Staff</a> </button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button  current"> <a href="./history.html" class="header__content_link">History </a></button>
+                    </li>
+                    <li class="header__content_item">
+                        <button type="button" class="header__content_button"> <a href="./about-us.html"
+                                class="header__content_link">About us </a></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="history__main">
+        <!--  Мобиьное меню -->
+        <div class="menu-container js-menu-container" id="menu-container">
+
+            <button type="button" class="mobile-menu-cross js-close-menu">
+                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="./images/icons.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu__content">
+                <ul class="mobile-menu__pages">
+                    <li class="mobile-menu__item">
+                        <a href="./index.html" class="mobile-menu__link">Home</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./research-area.html" class="mobile-menu__link">Research area</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./publications.html" class="mobile-menu__link">Publications</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./staff.html" class="mobile-menu__link">Staff</a>
+                    </li>
+                    <li class="mobile-menu__item mobile-menu__link-current">
+                        <a href="./history.html" class="mobile-menu__link">History</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./about-us.html" class="mobile-menu__link">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+<section class="section">
+<div class="container">
+<ul class="history__card_list">
+    <li class="history__card_item">
+    <div class="history__pic_container">    
+    <img src="./images/barabashov.jpg" alt="Barabashov" class=".history__pic_1" >
+ <p class="history__name"><i>Barabashov N. P.</i></p>
+    </div>
+    <p class="history__text"> 
+Studies of the Moon and other planets of the Solar System at the Kharkov Observatory &#40;which later became the Institute
+of Astronomy&#41; were started by Acad. Fessenkov V.G. in the 1930s.<br>
+ The founder of the world wide-known Kharkov school of planetary science, which gave a number of famous scientists and
+made a number of world famous discoveries and studies, was Acad. Barabashov N.P.<br>
+Information about the Moon's surface, Martian atmosphere, studies of the photometric properties of atmospheres of Venus,
+Jupiter, Saturn obtained by the researchers of Kharkov Observatory in the 1930-60`s ensured greater efficiency in the
+first planetary space program planning. Astronomers of Kharkov National University took part in the preparation and
+reduction of the results of almost all space born researches of the Moon, Mars, Venus and Halley Comet carried out in
+the USSR.
+    </p>
+    </li>
+<li class="history__card_item">
+    <div class="history__pic_container">
+    <img src="./images/akimov.jpg" alt="Akimov" class="history__pic_1">
+    <p class="history__name"><i>Akimov L. A.</i></p>
+    </div>
+    <p class="history__text">
+Many outstanding astronomers were students and successors of Acad. Barabashov's scientific research. Among them was
+Professor Leonid Afanasievich Akimov, who later formed a group of employees that became the Department of Physics of the
+Sun, Moon and Planets. As an independent unit, the Department of Physics of the Sun, Moon and Planets was separated in
+1993 during the reorganization of the Department of "Astrophysics" and is the successor to the classical direction of
+astrophysical research of the Sun, Moon and planets, laid down by Acad. Barabashov N.P. Research objects: the sun, moon,
+planets of the solar system. Research methods: photometric, polarimetric and spectrographic observations, as well as
+theoretical research.<br>
+One of Akimov's fundamental discoveries was the disk function (named after - Akimov's formula), which describes the
+distribution of brightness over the lunar disk, has a rather simple and concise form and gives a more accurate
+distribution, unlike the classical functions of Lommel-Zeeliger, Minnaert, McEwen, Hapke. Akimov's formula is still used
+today.
+    </p>
+</li>
+<li class="history__card_item">
+    <div class="history__pic_container">
+    <img src="./images/shkuratov.jpg" alt="Shkuratov" class="history__pic_1">
+    <p class="history__name"><i>Shkuratov Yu. G.</i></p>
+    </div>
+    <p class="history__text">
+Another successor and student of Acad. Barabashov N.P. is Yuri Grigorievich Shkuratov, who, together with his students
+and colleagues, created group that was later transformed into the Department of Remote Sensing of Planets in 1993. The
+department worked in two directions: 1&#41; processing of data from space and ground observations of the Moon and planets;
+2&#41; laboratory and theoretical modeling of light scattering by surfaces of complex structure.<br>
+Some of the well-known results of Shkuratov's research are: the method of phase relations, a new photometric function
+derived from the concept of a fractal-like surface structure, and a number of studies of the photometric, polarimetric
+and spectral properties of the lunar regolith
+    </p>
+</li>
+<li class="history__card_item history__card_item-double">
+    <div class="history__card_div" > 
+        <div class="history__pic_container">
+    <img src="./images/kaydash.jpg" alt="Kaydash" class="history__pic_1">
+    <p class="history__name"><i>Kaydash V. G.</i></p>
+    </div>
+    <p class="history__text">
+    The Lunar-Planetary Group arose in the 2010s in the process of joint work and merger of the departments of methods of
+    remote sensing of planets and the physics of the Sun, Moon and planets.<br>
+    The head of the lunar-planetary group in 2021 is Kaydash Vadim Grigorievich, and the ideological inspirers and founders
+    of Shkuratov Yuri Grigorievi and Korokhin Viktor Valentinovich.
+    </p>
+    </div>
+    <div class="history__card_div">
+        <div class="history__pic_container">
+        <img src="./images/korokhin.jpg" alt="Korokhin" class="history__pic_1">
+        <p class="history__name"><i>Korokhin V. V.</i></p>
+        </div>
+        <p class="history__text">
+<span class="history__text_accent">The main areas of research of the Lunar-planetary group are:</span><br>
+1. Investigation of the photometric function of the lunar surface.<br>
+2. Development of methods for remote sensing of the lunar surface and other surface Solar system bodies.<br>
+3. Remote sensing of the planetary surfaces.
+
+        </p>
+    </div>
+</li>
+</ul>
+</div> <!-- End of container-->
+</section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main-list">
+                <div class="footer__contacts">
+                    <p class="footer__contacts_title"> Contacts </p>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            35 Sumska Str.,
+                            Kharkiv,
+                            61022,
+                            Ukraine
+                        </li>
+                        <li>
+                            <a href="mailto:dslpp@astron.kharkov.ua" class="footer__link"> dslpp@astron.kharkov.ua </a>
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>
+    
+            <p class="footer__copyright"> &copy Anna Velichko, 2021</p>
+        </div>
+    </footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

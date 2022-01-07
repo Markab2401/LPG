@@ -1,0 +1,32 @@
+.footer {
+  min-height: 100px;
+  background-color: var(--footer-bkg-color);
+
+  padding: 20px;
+}
+
+.footer__contacts {
+  display: block;
+  width: 300px;
+  text-align: left;
+  color: #fff;
+}
+
+.footer__contacts_title {
+  @include font(14px, 700, 24px, 0.03em);
+}
+
+.footer__link {
+  color: #fff;
+}
+
+.footer__copyright {
+  text-align: left;
+  color: var(--text-color-dark);
+  @include font(12px, 500, 12px, 0.03em);
+  margin-top: 10px;
+}
+
+.footer__copyright_link {
+  color: var(--text-color-dark);
+}
